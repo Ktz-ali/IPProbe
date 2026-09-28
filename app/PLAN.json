@@ -1,0 +1,47 @@
+{
+  "app_name": "IP探针",
+  "package_name": "com.ipprobe.app",
+  "project_dir": "/sdcard/Download/Operit/ip_probe/app",
+  "requirement": "IP探针安卓应用：连接腾讯云函数后端（POST /api/probe 创建探针、GET /api/probe/list 探针列表、DELETE /api/probe/{code} 删除、GET /api/logs 日志、GET /api/ping 连通测试，token 鉴权）；App 内配置服务器与Token（DataStore 持久化）；探针管理界面；访问日志界面（IP/国家/省市/运营商/UA/时间）。技术栈：Kotlin + Jetpack Compose + MVVM + Retrofit + Gson + DataStore。包名 com.ipprobe.app，minSdk 24，targetSdk 34。M1 后端与 M2 骨架源码已手工完成于本目录。",
+  "created_at": "2026-08-26T16:50:00.000Z",
+  "architecture": "MVVM",
+  "min_sdk": 24,
+  "target_sdk": 34,
+  "language": "Kotlin",
+  "build_system": "Gradle",
+  "template": "internal",
+  "ui_framework": "Jetpack Compose",
+  "dependencies": [
+    "androidx.core:core-ktx:1.12.0",
+    "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0",
+    "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
+    "androidx.activity:activity-compose:1.8.2",
+    "androidx.compose:compose-bom:2024.02.01",
+    "androidx.compose.material3:material3",
+    "com.squareup.retrofit2:retrofit:2.9.0",
+    "com.squareup.retrofit2:converter-gson:2.9.0",
+    "com.squareup.okhttp3:okhttp:4.12.0",
+    "com.squareup.okhttp3:logging-interceptor:4.12.0",
+    "androidx.datastore:datastore-preferences:1.0.0"
+  ],
+  "ui_layout": {
+    "main_screen": "Scaffold + 设置卡片 + 连接测试 + 占位列表",
+    "navigation": "Single Activity",
+    "theme": "Material3"
+  },
+  "file_plan": [
+    "settings.gradle.kts",
+    "build.gradle.kts",
+    "app/build.gradle.kts",
+    "app/src/main/AndroidManifest.xml",
+    "app/src/main/java/com/ipprobe/app/MainActivity.kt",
+    "app/src/main/java/com/ipprobe/app/data/Models.kt",
+    "app/src/main/java/com/ipprobe/app/data/ProbeApi.kt",
+    "app/src/main/java/com/ipprobe/app/data/ApiClient.kt",
+    "app/src/main/java/com/ipprobe/app/data/SettingsStore.kt",
+    "app/src/main/java/com/ipprobe/app/ui/MainViewModel.kt",
+    "app/src/main/java/com/ipprobe/app/ui/MainScreen.kt",
+    "app/src/main/res/values/themes.xml"
+  ],
+  "status": "planned"
+}

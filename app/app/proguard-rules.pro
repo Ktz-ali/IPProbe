@@ -1,0 +1,1 @@
+# Retrofit/Gson 序列化模型保持默认（release 暂不混淆）

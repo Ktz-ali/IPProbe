@@ -1,0 +1,30 @@
+# ===== 敏感信息（切勿提交）=====
+# 真实后端配置（含数据库密码、地图 Key、令牌）
+backend/config.php
+
+# 签名密钥
+*.jks
+*.keystore
+keystore/
+
+# ===== 构建产物 =====
+build/
+app/build/
+app/app/build/
+.gradle/
+local.properties
+*.apk
+*.aab
+*.dex
+
+# ===== IDE =====
+.idea/
+*.iml
+.vscode/
+
+# ===== 本地交付物（含真实配置的 zip、APK、md5）=====
+deliver/
+
+# ===== 其它大文件 / 临时文件 =====
+ip2region-master.zip
+*.log
